@@ -15,7 +15,7 @@ public class PayStackClient {
     private static final String PAYSTACK_SECRET = "sk_test_xxxxxxxxxxxxxxxxxxxxx"; // replace with your secret
     private static final String BASE_URL = "https://api.paystack.co";
 
-    // ✅ Initialize Payment (no static)
+    // Initialize Payment (no static)
     public String initializePayment(String email, Double amount) {
         String url = BASE_URL + "/transaction/initialize";
 
@@ -42,7 +42,7 @@ public class PayStackClient {
         throw new RuntimeException("Failed to initialize payment with Paystack");
     }
 
-    // ✅ Verify Payment
+    // Verify Payment
     public boolean verifyPayment(String reference) {
         String url = BASE_URL + "/transaction/verify/" + reference;
 
