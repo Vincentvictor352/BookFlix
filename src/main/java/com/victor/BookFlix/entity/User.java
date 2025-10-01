@@ -1,7 +1,5 @@
 package com.victor.BookFlix.entity;
 
-
-import com.victor.BookFlix.role.Role;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -47,4 +45,6 @@ public class User {
     protected void onUpdate() {
         this.updatedAt = LocalDateTime.now();
     }
+
+
 }
