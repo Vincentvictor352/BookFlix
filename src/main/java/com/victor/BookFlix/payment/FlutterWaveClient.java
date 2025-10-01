@@ -15,7 +15,7 @@ public class FlutterWaveClient {
     private final String FLW_SECRET = "FLWSECK_TEST-xxxxxxxxxxxxxxxxxxx-X";
     private final String BASE_URL = "https://api.flutterwave.com/v3";
 
-    // ✅ Initialize payment
+    //  Initialize payment
     public String initializePayment(String email, String phone, Double amount, String currency) {
         String url = BASE_URL + "/payments";
 
